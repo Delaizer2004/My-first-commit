@@ -1,0 +1,60 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 1140px;
+    height: 100vh;
+    
+}
+.logo{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    padding: 40px 0 0 0;
+}
+.header{
+    background-image: url(/Картинки/Layer\ 10.png);
+    height: 792px;
+}
+.header_menu_inner{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.item{
+    color: white;
+    font-size: 17px;
+    
+    
+    
+}
+.header_intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 300px auto;
+    font-size: 30px;
+    color: white;
+}
+.btn{
+    color: white;
+    font-style: none;
+    
+    border: 4px white;
+    padding: 10px;
+}
+.main_intro{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    color: rgb(92, 91, 91);
+}
