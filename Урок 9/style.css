@@ -12,30 +12,48 @@ body{
 .container{
     width: 100%;
     max-width: 1140px;
-    height: 100vh;
+    height: 45vh;
     
 }
 .logo{
     color: white;
     font-size: 20px;
     display: flex;
-    padding: 40px 0 0 0;
+   
+    text-decoration: none;
+    
 }
 .header{
-    background-image: url(/Картинки/Layer\ 10.png);
+    background-image: url(/Картинки/Layer\ 10.png) ;
     height: 792px;
+    
 }
 .header_menu_inner{
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+
+    
+    
 }
+.header_top{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .item{
     color: white;
     font-size: 17px;
+    text-decoration: none;
+    display: flex;
     
-    
-    
+}
+.item:hover{
+    font-size: 20px;
+    color: blue;
 }
 .header_intro{
     display: flex;
@@ -44,17 +62,103 @@ body{
     margin: 300px auto;
     font-size: 30px;
     color: white;
+    
+}
+.header_menu_item{
+    margin: 0 15px;
 }
 .btn{
     color: white;
     font-style: none;
-    
-    border: 4px white;
+    text-decoration: none;
+    border: 4px solid white;
     padding: 10px;
+    margin: 15px 0;
+    
+}
+.btn:hover{
+    background-color: white;
+    color: red;
 }
 .main_intro{
     display: flex;
     flex-direction: column;
     margin: 50px 0;
     color: rgb(92, 91, 91);
+}
+.main_views{
+    display: flex;
+}
+.header_view{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header_view i {
+    font-size: 43px;
+    color: #bf2f1b;
+}
+.views_intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    margin: 15px 15px;
+}
+.views_intro h3,
+.views_intro p{
+    margin-top: 15px;
+    text-align: center;
+}
+.views_intro:hover > .header_view{
+    background-color: #bf2f1b;
+}
+.views_intro:hover > .header_view i{
+    color: white;
+}
+footer{
+    width: 100%;
+    background-color: #bf2f1b;
+    
+}
+.footer_inner{
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.social_icons{
+    background-color: transparent;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.social_item{
+    width: 35px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social_item:hover{
+    background-color: white;
+}
+.line{
+    border: 2px solid black;
+    width: 50px;
+    height: 3px;
+    margin: 30px auto;
 }
