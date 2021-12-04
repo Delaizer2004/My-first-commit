@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    color: white;
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body{
+    height: 100%;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    list-style: none;
+}
+nav ul{
+    margin: 20px;
+    padding: 0;
+    display: flex;
+}
+nav li{
+    margin: 0 2rem;
+}
+.main{
+    display: flex;
+}
+.main-left{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+  
+.main-left h2,
+.main-left p{
+    margin: 10px;
+}
+.cards-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 33.333%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+  
+.card{
+    margin: 10px;
+    border: 1px solid black;
+    flex: 0 1 25%;
+    display: flex;
+    flex-direction: column;
+}
+.card h3{
+    margin: 0;
+    padding: 0.5em 1em;
+    font-size: 1.25rem;
+    color: #fff;
+    background-color: #333;
+}
+.card p{
+    margin: 0;
+    padding: 2.5em 1em;
+}
+.main-right{
+    background-color: #333;
+    margin: 10px;
+    padding: 1.5em 1em;
+    border: 7px solid black;
+    color: white;
+    width: 30%;
+}
+@media (max-width: 40rem) {
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    nav li {
+      border-bottom: 2px solid black;
+      padding: 20px;
+    }
+    .main-right {
+      width: 100%;
+    }
+  
+    .cards-list {
+      display: flex;
+      flex: 0 1 50%;
+  
+      flex-direction: column;
+    }
+  }
+@media(max-width: 80rem){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-right{
+        width: 100%;
+        margin: 0;
+    }
+    .card-list{
+        
+    }
+}
+

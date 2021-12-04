@@ -1,0 +1,8 @@
+.grid{
+    display: grid;
+}
+.grid_item{
+    display: grid;
+    border: 2px dashed black;
+    align-items: center;
+}
